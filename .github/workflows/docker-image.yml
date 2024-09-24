@@ -58,6 +58,9 @@ jobs:
     - name: Get pods
       run: kubectl get pods -A
 
+    - name: checkout repo
+      uses: actions/checkout@v3
+
     - name: Run deloyment
       run: kubectl apply -f deployment.yaml
 
