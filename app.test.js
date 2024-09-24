@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../index.js'); // Import the app
+const app = require('./index.js'); // Import the app
 
 describe('Test the root path', () => {
   it('should respond with "Hello World"', async () => {
